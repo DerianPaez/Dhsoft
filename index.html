@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="">
+  <meta name="keywords" content="Desarrollo web, Desarrollo web responsivo, Aplicaciones web, SEO"/>
+  <meta name="author" content="Derian Paez && James Mendoza">
+  <link rel="shortcut icon" href="#" type="image/x-icon">
   <title>Dhsoft</title>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/responsive.css">
@@ -12,190 +17,165 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header id="header-id" class="header">
+    <div class="header-container wrapper ">
+      <figure class="header-logo">
+        <img src="images/Dhsoft.png" alt="Logo Dhsoft">
+      </figure>
 
-  <!-- ============================
-                Header
-    ================================= -->
+      <figure id="menu-icon" class="header-menu-icon">
+        <img src="./icons/lista.svg" alt="Menu">
+      </figure>
 
-    <header class="header" id="header-id">
-      <div class="wrapper header-container">
-        <figure class="header-logo">
-          <img src="images/Dhsoft.png" alt="Logo Dhsoft">
+      <nav id="menu-nav" class="header-menu-nav">
+        <figure id="menu-icon-close" class="header-menu-icon-close">
+          <img src="./icons/eliminar-simbolo.svg" alt="">
         </figure>
-        
-        <figure id="menu-icon" class="header-menu-icon">
-          <img src="./icons/lista.svg" alt="Menu">
+        <ul class="header-menu">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="#about-us-id">Nosotros</a></li>
+          <li><a href="#offer-id">Servicios</a></li>
+          <li><a href="#contact-id">Contáctanos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="banner-id" class="banner">
+    <div class="wrapper">
+      <div class="banner-container">
+        <h1>Desarrolladores Web</h1>
+        <p>Somos desarrolladores web con mas de 5 años de experiencia</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about-us-id" class="about-us">
+    <div class="wrapper">
+      <div class="about-us-container">
+        <div>
+          <div class="us-container">
+            <h2>Nosotros</h2>
+            <p>Somos un grupo de jóvenes amantes de nuestro trabajo y plasmamos esa pasión en cada desarrollo. Actualmente contamos con un equipo de profesionales especializados en diferentes áreas del desarrollo de sitios web, con lo cual aseguramos la calidad de cada trabajo que realizamos: Diseño web, Programación, Sistemas, Comercio Electrónico, Email Marketing y Posicionamiento en Buscadores.</p>
+          </div>
+          <div class="mission-vision-container">
+            <div class="mission-container">
+              <h3>Misión</h3>
+              <p>Proveer a nuestros clientes herramientas web que impulsen el desarrollo competitivo y efectivo proporcionando crecimiento e ingresos economicos a sus negocios en Ecuador y el mundo entero</p>
+            </div>
+            <div class="vision-container">
+              <h3>Visión</h3>
+              <p>Proyectarnos como empresa líder en el desarrollo web en Costa Rica, ser proveedores de servicios web y productos de alta calidad que faciliten el desempeño competitivo y el crecimiento de nuestros clientes en Ecuador y el resto del mundo</p>
+            </div>
+          </div>
+        </div>
+        <figure class="about-us-img-container">
+          <img src="./images/about-us.svg" alt="">
         </figure>
-
-        <nav id="menu-nav" class="header-menu-nav">
-          <figure id="menu-icon-close" class="header-menu-icon-close">
-            <img src="./icons/eliminar-simbolo.svg" alt="">
-          </figure>
-          <ul class="header-menu">
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Nosotros</a></li>
-            <li><a href="">Servicios</a></li>
-            <li><a href="">Contáctanos</a></li>
-          </ul>
-        </nav>
       </div>
-    </header>
-    
-  <!-- ============================
-              Banner
-  ================================= -->
+    </div>
+  </section>
 
-    <section class="banner">
-      <div class="wrapper">
-        <div class="banner-container">
-          <h1>Desarrolladores Web</h1>
-          <p>Somos desarrolladores web con mas de 5 años de experiencia</p>
-        </div>
-      </div>
-    </section>
-
-  <!-- ============================
-              About us
-  ================================= -->
-
-    <section class="about-us">
-     <div class="wrapper">
-       <div class="about-us-container">
-          <div>
-            <div class="us-container">
-              <h2>Nosotros</h2>
-              <p>Somos un grupo de jóvenes amantes de nuestro trabajo y plasmamos esa pasión en cada desarrollo. Actualmente contamos con un equipo de profesionales especializados en diferentes áreas del desarrollo de sitios web, con lo cual aseguramos la calidad de cada trabajo que realizamos: Diseño web, Programación, Sistemas, Comercio Electrónico, Email Marketing y Posicionamiento en Buscadores.</p>
+  <section id="offer-id" class="offer">
+    <div class="wrapper">
+      <div class="offer-container">
+        <div>
+          <h2>Ofrecemos</h2>
+          <p>Varios serivicios escenciales para el desarrollo de tu pagina web</p>
+          <div id="buttons-container" class="offer-button-container">
+            <button id="button-1" type="button">Desarrollo Web</button>
+            <div class="border-button">
+              <button id="button-2"  type="button">Diseño Responsivo</button>
             </div>
-            <div class="mission-vision-container">
-              <div class="mission-container">
-                <h3>Misión</h3>
-                <p>Proveer a nuestros clientes herramientas web que impulsen el desarrollo competitivo y efectivo proporcionando crecimiento e ingresos economicos a sus negocios en Ecuador y el mundo entero</p>
-              </div>
-              <div class="vision-container">
-                <h3>Visión</h3>
-                <p>Proyectarnos como empresa líder en el desarrollo web en Costa Rica, ser proveedores de servicios web y productos de alta calidad que faciliten el desempeño competitivo y el crecimiento de nuestros clientes en Ecuador y el resto del mundo</p>
-              </div>
-            </div>
+            <button id="button-3" type="button">SEO</button>
           </div>
-          <figure class="about-us-img-container">
-            <img src="./images/about-us.svg" alt="">
-          </figure>
-       </div>
-     </div>
-    </section>
-
-  <!-- ============================
-              Offer
-  ================================= -->
-
-    <section class="offer">
-      <div class="wrapper">
-        <div class="offer-container">
-          <div>
-            <h2>Ofrecemos</h2>
-            <p>Varios serivicios escenciales para el desarrollo de tu pagina web</p>
-            <div id="buttons-container" class="offer-button-container">
-              <button id="button-1" type="button">Desarrollo Web</button>
-              <div class="border-button">
-                <button id="button-2"  type="button">Diseño Responsivo</button>
-              </div>
-              <button id="button-3" type="button">SEO</button>
-            </div>
-            <div id="description-container" class="offer-description-container">
-              <p>Desarrollo Web Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quam harum quae at voluptates autem fugiat soluta, tempore dignissimos fuga nemo. Nulla autem itaque iste, qui suscipit nemo fugit dicta!</p>
-            </div>
-          </div>
-          <figure id="img-container" class="offer-img-container">
-            <img src="images/test-services 1.png" alt="">
-          </figure>
-        </div>
-      </div>
-    </section>
-
-  <!-- ============================
-              Contact
-  ================================= -->
-
-    <section class="contact">
-      <div class="wrapper">
-        <h2>Contáctanos</h2>
-        <div class="contact-container">
-          <form class="form" action="">
-            <input type="text" placeholder="Nombres">
-            <input type="email" placeholder="Correo Electrónico">
-            <textarea placeholder="Mensaje"></textarea>
-            <button class="form-submit" type="submit">Enviar</button>
-          </form>
-          <div class="contact-cards">
-            <div class="location-container">
-              <figure>
-                <img src="./icons/Location.svg" alt="">
-              </figure>
-              <div>
-                <h3>Ubicación</h3>
-                <p>Urb. Urdenor 2</p>
-              </div>
-            </div>
-            <div class="phone-container">
-              <figure>
-                <img src="./icons/Phone.svg" alt="">
-              </figure>
-              <div>
-                <h3>Teléfono</h3>
-                <p>0999999999</p>
-              </div>
-            </div>
-            <div class="mail-container">
-              <figure>
-                <img src="./icons/Mail.svg" alt="">
-              </figure>
-              <div>
-                <h3>Correo Electrónico</h3>
-                <p>Dhsoft@hotmail.com</p>
-              </div>
-            </div>
+          <div id="description-container" class="offer-description-container">
+            <p>Desarrollo Web Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quam harum quae at voluptates autem fugiat soluta, tempore dignissimos fuga nemo. Nulla autem itaque iste, qui suscipit nemo fugit dicta!</p>
           </div>
         </div>
+        <figure id="img-container" class="offer-img-container">
+          <img src="images/offer-web-development.png" alt="Imagen de desarrollo web">
+        </figure>
       </div>
-    </section>
+    </div>
+  </section>
 
-  <!-- ============================
-              Footer
-  ================================= -->
-
-    <footer class="footer">
-     <div class="wrapper footer-wrapper">
-        <div class="footer-container">
-          <div class="footer-info-container">
+  <section id="contact-id" class="contact">
+    <div class="wrapper">
+      <h2>Contáctanos</h2>
+      <div class="contact-container">
+        <form class="form" action="">
+          <input type="text" placeholder="Nombres">
+          <input type="email" placeholder="Correo Electrónico">
+          <textarea placeholder="Mensaje"></textarea>
+          <button class="form-submit" type="submit">Enviar</button>
+        </form>
+        <div class="contact-cards">
+          <div class="location-container">
             <figure>
-              <img src="images/Dhsoft.png" alt="">
+              <img src="./icons/Location.svg" alt="">
             </figure>
-            <a href="">Nosotros</a>
-            <a href="">Política de privacidad</a>
-            <a href="">Terminos y condiciones</a>
+            <div>
+              <h3>Ubicación</h3>
+              <p>Urb. Urdenor 2</p>
+            </div>
           </div>
-          <div class="footer-social-media">
-            <h4>Redes Sociales</h4>
-            <a href="">Facebook</a>
-            <a href="">Instagram</a>
-            <a href="">Twitter</a>
-            <a href="">Linkedin</a>
+          <div class="phone-container">
+            <figure>
+              <img src="./icons/Phone.svg" alt="">
+            </figure>
+            <div>
+              <h3>Teléfono</h3>
+              <p>0999999999</p>
+            </div>
           </div>
-          <div class="footer-contact">
-            <h4>Contacto</h4>
-            <a href="mailto:Dhsoft@dhsoft.com">Dhsoft@hotmail.com</a>
-            <address>Urdenor 2</address>
-            <a href="tel:+593 99 1969 410">+593 99 1969 410</a>
-            <a href="tel:+593 99 1969 410">+593 99 1969 410</a>
+          <div class="mail-container">
+            <figure>
+              <img src="./icons/Mail.svg" alt="">
+            </figure>
+            <div>
+              <h3>Correo Electrónico</h3>
+              <p>Dhsoft@hotmail.com</p>
+            </div>
           </div>
         </div>
-     </div>
-      <div class="footer-rights">
-        <small>© 2020 Copyright DHsoft All rights reserved</small>
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <script src="./js/header.js"></script>
-    <script src="./js/accordion.js"></script>
+  <footer class="footer">
+    <div class="wrapper footer-wrapper">
+      <div class="footer-container">
+        <div class="footer-info-container">
+          <figure>
+            <img src="images/Dhsoft.png" alt="">
+          </figure>
+          <a href="#about-us-id">Nosotros</a>
+          <a href="">Política de privacidad</a>
+          <a href="">Terminos y condiciones</a>
+        </div>
+        <div class="footer-social-media">
+          <h4>Redes Sociales</h4>
+          <a href="">Facebook</a>
+          <a href="">Instagram</a>
+          <a href="">Twitter</a>
+          <a href="">Linkedin</a>
+        </div>
+        <div class="footer-contact">
+          <h4>Contacto</h4>
+          <a href="mailto:Dhsoft@dhsoft.com">Dhsoft@hotmail.com</a>
+          <address>Urdenor 2</address>
+          <a href="tel:+593 99 1969 410">+593 99 1969 410</a>
+          <a href="tel:+593 99 1969 410">+593 99 1969 410</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-rights">
+      <small>© 2020 Copyright DHsoft All rights reserved</small>
+    </div>
+  </footer>
+
+  <script src="./js/header.js"></script>
+  <script src="./js/accordion.js"></script>
 </body>
 </html>

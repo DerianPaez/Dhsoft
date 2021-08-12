@@ -6,33 +6,37 @@ const button2 = document.getElementById('button-2')
 const button3 = document.getElementById('button-3')
 
 const webDevelopment = {
-  description: 'parrafo 1',
-  img: 'images/test-services 1.png'
+  description: 'Desarrollo Web Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quam harum quae at voluptates autem fugiat soluta, tempore dignissimos fuga nemo. Nulla autem itaque iste, qui suscipit nemo fugit dicta!',
+  img: 'images/offer-web-development.png',
+  alt: 'Imagen de desarrollo web'
 }
 
 const responsiveDesign = {
-  description: 'parrafo 2',
-  img: 'images/test-services 1.png'
+  description: 'Diseño responsivo Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quam harum quae at voluptates autem fugiat soluta, tempore dignissimos fuga nemo. Nulla autem itaque iste, qui suscipit nemo fugit dicta!',
+  img: 'images/offer-responsive-design.svg',
+  alt: 'Imagen de diseño responsivo'
 }
 
 const seo = {
-  description: 'parrafo 3',
-  img: 'images/test-services 1.png'
+  description: 'SEO Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quam harum quae at voluptates autem fugiat soluta, tempore dignissimos fuga nemo. Nulla autem itaque iste, qui suscipit nemo fugit dicta!',
+  img: 'images/offer-seo.svg',
+  alt: 'Imagen de SEO'
 }
 
 let description = document.createElement('p')
 let img = document.createElement('img')
 
-function cleanContainers(){
-  descriptionContainer.innerHTML = ''
-  imgContainer.innerHTML = ''
-}
-
 function changeValues(value){
   description.innerHTML = value.description
   descriptionContainer.appendChild(description)
   img.setAttribute('src', value.img)
+  img.setAttribute('alt', value.alt)
   imgContainer.appendChild(img)
+}
+
+function cleanContainers(){
+  descriptionContainer.innerHTML = ''
+  imgContainer.innerHTML = ''
 }
 
 buttonsContainer.addEventListener('click', (event) => {
@@ -50,7 +54,7 @@ buttonsContainer.addEventListener('click', (event) => {
       cleanContainers()
       changeValues(seo)
     break;
-  
+
     default:
       break;
   }
