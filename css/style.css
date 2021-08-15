@@ -44,7 +44,7 @@ section{
 }
 
 .wrapper {
-  width: 90%;
+  width: 85%;
   max-width: 1200px;
   margin: 0 auto;
   display: inherit;
@@ -139,9 +139,6 @@ section{
 
 .banner-container p {
   font-size: .9em;
-}
-
-.banner-container p {
   color: #fff;
 }
 
@@ -189,7 +186,7 @@ section{
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 10px 0;
+  margin: 20px 0 10px;
 }
 
 .offer-button-container button {
@@ -206,11 +203,11 @@ section{
   padding: 5px 10px;
 }
 
-/* ====================Contact================== */
-.footer-wrapper {
-  padding: 50px 0;
+.offer-button-color {
+  color: var(--greenLight-color);
 }
 
+/* ====================Contact================== */
 .form {
   display: grid;
   gap: 20px;
@@ -254,7 +251,6 @@ section{
 .contact-cards {
   display: grid;
   gap: 20px;
-  align-items: center;
   margin-top: 30px;
 }
 
@@ -280,6 +276,10 @@ section{
 .footer {
   background-color: #000;
   /* border-top: 3px solid var(--greenLight-color); */
+}
+
+.footer-wrapper {
+  padding: 50px 0;
 }
 
 .footer-container {

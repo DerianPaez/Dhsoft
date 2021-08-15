@@ -15,12 +15,18 @@
   .header-menu-icon-close {
     display: none;
   }
+  .banner-container h1 {
+    font-size: 2em;
+  }
+  .banner-container p {
+    width: 60%;
+    font-size: 1.1em;
+  }
   .contact-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     justify-content: center;
-    align-items: center;
   }
   .contact-cards {
     margin-top: 0;
@@ -31,6 +37,12 @@
 }
 
 @media screen and (min-width:1024px) {
+  h2 {
+    font-size: 1.9em;
+  }
+  .header-menu a {
+    font-size: 1.2em;
+  }
   .about-us-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
