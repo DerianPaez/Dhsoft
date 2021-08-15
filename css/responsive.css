@@ -1,4 +1,21 @@
-@media screen and (min-width:700px) {
+@media screen and (min-width:425px) {
+  .banner::before {
+    background-position: 200px 60%;
+    background-size: 80%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .banner-container {
+    margin-bottom: 100px;
+  }
+  .banner-container h1 {
+    width: 100%;
+  }
+  .banner::before {
+    background-position: 400px 60%;
+    background-size: 60%;
+  }
   .header-menu-icon {
     display: none;
   }
@@ -19,7 +36,6 @@
     font-size: 2em;
   }
   .banner-container p {
-    width: 60%;
     font-size: 1.1em;
   }
   .contact-container {
@@ -37,6 +53,10 @@
 }
 
 @media screen and (min-width:1024px) {
+  .banner::before {
+    background-position: 600px 150%;
+    background-size: 60%;
+  }
   h2 {
     font-size: 1.9em;
   }
