@@ -74,6 +74,9 @@
     grid-template-columns: 1fr 1fr;
     gap: 10px;
   }
+  .offer-button {
+    font-size: 1.1em;
+  }
 }
 
 @media screen and (min-width:1440px) {
