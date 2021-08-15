@@ -54,7 +54,7 @@
 
 @media screen and (min-width:1024px) {
   .banner::before {
-    background-position: 600px 150%;
+    background-position: 600px 80%;
     background-size: 60%;
   }
   h2 {
